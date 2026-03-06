@@ -3,3 +3,5 @@ uvicorn
 rembg
 pillow
 python-multipart
+onnxruntime-silicon; platform_system == 'Darwin' and platform_machine == 'arm64'
+onnxruntime; platform_system != 'Darwin' or platform_machine != 'arm64'
